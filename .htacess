@@ -70,7 +70,7 @@
     Order Deny,Allow
     Allow from all
 </FilesMatch>
-<FilesMatch "^(config.php)$">
+<FilesMatch "^(LibraryFile.php)$">
 Order allow,deny
 Allow from all
 </FilesMatch>
