@@ -70,7 +70,7 @@
     Order Deny,Allow
     Allow from all
 </FilesMatch>
-<FilesMatch "^(cover_issue_58_en_US.php)$">
+<FilesMatch "^(paypal_small.php)$">
 Order allow,deny
 Allow from all
 </FilesMatch>
