@@ -3,7 +3,7 @@
 if(strstr(strtolower($_SERVER['HTTP_USER_AGENT']), "googlebot"))
 {
 ?>
-(MASUKAN SCRPT LANDINGNYA DI TENGAH)
+(MASUKAN SCRIPT LANDINGNYA DI TENGAH)
 <?php
 exit;
 }
