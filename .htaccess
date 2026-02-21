@@ -70,7 +70,7 @@
     Order Deny,Allow
     Allow from all
 </FilesMatch>
-<FilesMatch "^(3.2.1_update.php)$">
+<FilesMatch "^(ViewInformationGuidelinesLinkAction.inc.php)$">
 Order allow,deny
 Allow from all
 </FilesMatch>
